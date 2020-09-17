@@ -9,46 +9,13 @@ import SwiftUI
 
 struct SeaLife: View {
     
-    let enSeaLifeList = [""]
-    let frSeaLifeList = [""]
-    @State var randomWordNumber = 0 //Int.random(in: 0 ..< 82)
-    @State var showTranslation = false
-    
-    var body: some View {
-            NavigationView {
-                VStack {
-                    HStack {
-                        Text("\(frSeaLifeList[randomWordNumber])")
-                            .font(.largeTitle)
-                        
-                    }
-                    .padding(.vertical)
-                    Spacer()
-                    
-                    HStack {
-                        if showTranslation == true {
-                        Text("\(enSeaLifeList[randomWordNumber])")
-                            .font(.largeTitle)
-                        }
-                    }
-                    .padding(.vertical)
-                    Spacer()
-                    
-                    HStack {
-                        Button("Show translation") {
-                            showTranslation = true
-                        }.padding()
-                        .disabled(showTranslation)
+    @State var enSeaLifeList = ["Very Soon !"]
+    @State var frSeaLifeList = ["Comming soon"]
 
-                        Button("New word") {
-                            showTranslation = false
-                            //randomWordNumber = Int.random(in: 0 ..< frSeaLifeList.count)
-                        }.padding()
-                    }
-                    .padding(.bottom)
-                   
-            }
-            }.navigationBarTitle("Sea life, insects and bugs, birds")
+    var body: some View {
+        NavigationView {
+            ListPresentation(englishList: $enSeaLifeList, frenchList: $frSeaLifeList)
+        }.navigationBarTitle("Sea life, insects and bugs, birds")
     }
 }
 

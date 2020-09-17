@@ -27,7 +27,7 @@ struct ContentView: View {
                     }
                     .padding(.vertical)
                 }.navigationBarTitle("TOEIC Vocabulary")
-            }
+            }.font(/*@START_MENU_TOKEN@*/.title3/*@END_MENU_TOKEN@*/)
         }
 }
 
