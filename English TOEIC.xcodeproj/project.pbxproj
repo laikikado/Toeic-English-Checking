@@ -11,6 +11,8 @@
 		4B6B6EEE2513B9DC009C0FC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6B6EED2513B9DC009C0FC1 /* ContentView.swift */; };
 		4B6B6EF02513B9DD009C0FC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B6B6EEF2513B9DD009C0FC1 /* Assets.xcassets */; };
 		4B6B6EF32513B9DD009C0FC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B6B6EF22513B9DD009C0FC1 /* Preview Assets.xcassets */; };
+		4B6B6F04251405BB009C0FC1 /* Animals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6B6F03251405BB009C0FC1 /* Animals.swift */; };
+		4B6B6F082514060B009C0FC1 /* SeaLife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6B6F072514060B009C0FC1 /* SeaLife.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		4B6B6EEF2513B9DD009C0FC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B6B6EF22513B9DD009C0FC1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4B6B6EF42513B9DD009C0FC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B6B6F03251405BB009C0FC1 /* Animals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animals.swift; sourceTree = "<group>"; };
+		4B6B6F072514060B009C0FC1 /* SeaLife.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaLife.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 		4B6B6EEA2513B9DC009C0FC1 /* English TOEIC */ = {
 			isa = PBXGroup;
 			children = (
+				4B6B6F0225140550009C0FC1 /* Chapters */,
 				4B6B6EEB2513B9DC009C0FC1 /* English_TOEICApp.swift */,
 				4B6B6EED2513B9DC009C0FC1 /* ContentView.swift */,
 				4B6B6EEF2513B9DD009C0FC1 /* Assets.xcassets */,
@@ -67,6 +72,15 @@
 				4B6B6EF22513B9DD009C0FC1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4B6B6F0225140550009C0FC1 /* Chapters */ = {
+			isa = PBXGroup;
+			children = (
+				4B6B6F03251405BB009C0FC1 /* Animals.swift */,
+				4B6B6F072514060B009C0FC1 /* SeaLife.swift */,
+			);
+			path = Chapters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B6B6EEE2513B9DC009C0FC1 /* ContentView.swift in Sources */,
+				4B6B6F082514060B009C0FC1 /* SeaLife.swift in Sources */,
+				4B6B6F04251405BB009C0FC1 /* Animals.swift in Sources */,
 				4B6B6EEC2513B9DC009C0FC1 /* English_TOEICApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

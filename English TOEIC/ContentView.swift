@@ -9,9 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
+            NavigationView {
+                VStack(alignment: .leading) {
+                    NavigationLink(destination: Animals()) {
+                        Text("Animals")
+                    }
+                    .padding(.vertical)
+                    NavigationLink(destination: SeaLife()) {
+                        Text("Sea life, insects and bugs, birds")
+                    }
+                    Button("Companies") {
+                    }
+                    .padding(.vertical)
+                    Button("Human resources and accounting") {
+                    }
+                    Button("Marketing and purchasing") {
+                    }
+                    .padding(.vertical)
+                }.navigationBarTitle("TOEIC Vocabulary")
+            }
+        }
 }
 
 struct ContentView_Previews: PreviewProvider {
