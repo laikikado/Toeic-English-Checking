@@ -8,16 +8,16 @@ import SwiftUI
 
 struct ListPresentation: View {
     
-    @Binding var englishList:[String]
-    @Binding var frenchList:[String]
+    @Binding var solutionList:[String]
+    @Binding var displayedList:[String]
     
-    @State var randomWordNumber = Int.random(in: 0 ..< 1)
+    @State var randomWordNumber = Int.random(in: 0 ..< 84)
     @State var showTranslation = false
     
     var body: some View {
         VStack {
             HStack {
-                Text("\(frenchList[randomWordNumber])")
+                Text("\(displayedList[randomWordNumber])")
                     .font(.largeTitle)
                 
             }
@@ -26,7 +26,7 @@ struct ListPresentation: View {
             
             HStack {
                 if showTranslation == true {
-                Text("\(englishList[randomWordNumber])")
+                Text("\(solutionList[randomWordNumber])")
                     .font(.largeTitle)
                 }
             }
@@ -34,7 +34,7 @@ struct ListPresentation: View {
             Spacer()
             
             HStack {
-                Text("\(frenchList.count) words")
+                Text("\(displayedList.count) words")
             }
             .font(/*@START_MENU_TOKEN@*/.footnote/*@END_MENU_TOKEN@*/)
             .padding(.bottom)
@@ -47,16 +47,16 @@ struct ListPresentation: View {
 
                 Button("New word") {
                     showTranslation = false
-                    randomWordNumber = Int.random(in: 0 ..< frenchList.count)
+                    randomWordNumber = Int.random(in: 0 ..< displayedList.count)
                 }.padding()
             }.padding(.bottom)
-        }
+        }.padding(.bottom)
     }
 }
 
 struct ListPresentation_Previews: PreviewProvider {
     static var previews: some View {
-        ListPresentation(englishList: .constant(["EnglishWord"]), frenchList:.constant(["FrenchWord"]))
+        ListPresentation(solutionList: .constant(["EnglishWord"]), displayedList:.constant(["FrenchWord"]))
             .previewLayout(.sizeThatFits)
     }
 }
