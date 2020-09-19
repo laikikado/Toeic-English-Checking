@@ -16,7 +16,7 @@ struct More: View {
                     VStack {
                         NavigationLink(destination: Settings()) {
                             Text("Settings")
-                        }
+                        }.disabled(true)
                     }
                     VStack {
                         NavigationLink(destination: About()) {
