@@ -24,7 +24,7 @@ struct More: View {
                         }
                     }
                     VStack {
-                        NavigationLink(destination: About()) {
+                        NavigationLink(destination: Credits()) {
                             Text("Credits")
                         }.disabled(true)
                     }
@@ -47,7 +47,7 @@ struct InformationsMoreHeader: View {
 
 struct More_Previews: PreviewProvider {
     static var previews: some View {
-        About()
+        More()
             .previewLayout(.sizeThatFits)
     }
 }

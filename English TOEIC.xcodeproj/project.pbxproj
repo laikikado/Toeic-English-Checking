@@ -13,10 +13,12 @@
 		4B6B6EF32513B9DD009C0FC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B6B6EF22513B9DD009C0FC1 /* Preview Assets.xcassets */; };
 		4B6B6F04251405BB009C0FC1 /* Animals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6B6F03251405BB009C0FC1 /* Animals.swift */; };
 		4B6B6F082514060B009C0FC1 /* SeaLife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6B6F072514060B009C0FC1 /* SeaLife.swift */; };
-		4B6B6F13251412E1009C0FC1 /* ListPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6B6F12251412E1009C0FC1 /* ListPresentation.swift */; };
 		4B7347122514A36A00289A99 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7347112514A36A00289A99 /* About.swift */; };
 		4B7347152514DC6300289A99 /* More.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7347142514DC6300289A99 /* More.swift */; };
 		4B7347182514E1AD00289A99 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7347172514E1AD00289A99 /* Settings.swift */; };
+		4B73472525155DEB00289A99 /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B73472425155DEB00289A99 /* Credits.swift */; };
+		4B73472A2515662A00289A99 /* TestListPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7347292515662A00289A99 /* TestListPattern.swift */; };
+		4B73472E251566BA00289A99 /* VocabularyListPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B73472D251566BA00289A99 /* VocabularyListPattern.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +30,12 @@
 		4B6B6EF42513B9DD009C0FC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B6B6F03251405BB009C0FC1 /* Animals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animals.swift; sourceTree = "<group>"; };
 		4B6B6F072514060B009C0FC1 /* SeaLife.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaLife.swift; sourceTree = "<group>"; };
-		4B6B6F12251412E1009C0FC1 /* ListPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresentation.swift; sourceTree = "<group>"; };
 		4B7347112514A36A00289A99 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		4B7347142514DC6300289A99 /* More.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = More.swift; sourceTree = "<group>"; };
 		4B7347172514E1AD00289A99 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		4B73472425155DEB00289A99 /* Credits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
+		4B7347292515662A00289A99 /* TestListPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListPattern.swift; sourceTree = "<group>"; };
+		4B73472D251566BA00289A99 /* VocabularyListPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyListPattern.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 		4B6B6EEA2513B9DC009C0FC1 /* English TOEIC */ = {
 			isa = PBXGroup;
 			children = (
+				4B734722251557DC00289A99 /* Tabs */,
+				4B734721251557C800289A99 /* Views */,
 				4B6B6F11251412D1009C0FC1 /* Components */,
 				4B6B6F0225140550009C0FC1 /* Chapters */,
 				4B6B6EEB2513B9DC009C0FC1 /* English_TOEICApp.swift */,
@@ -95,12 +101,28 @@
 		4B6B6F11251412D1009C0FC1 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				4B6B6F12251412E1009C0FC1 /* ListPresentation.swift */,
-				4B7347112514A36A00289A99 /* About.swift */,
-				4B7347142514DC6300289A99 /* More.swift */,
-				4B7347172514E1AD00289A99 /* Settings.swift */,
+				4B7347292515662A00289A99 /* TestListPattern.swift */,
+				4B73472D251566BA00289A99 /* VocabularyListPattern.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		4B734721251557C800289A99 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4B7347112514A36A00289A99 /* About.swift */,
+				4B7347172514E1AD00289A99 /* Settings.swift */,
+				4B73472425155DEB00289A99 /* Credits.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4B734722251557DC00289A99 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				4B7347142514DC6300289A99 /* More.swift */,
+			);
+			path = Tabs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,13 +194,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B73472A2515662A00289A99 /* TestListPattern.swift in Sources */,
 				4B6B6EEE2513B9DC009C0FC1 /* ContentView.swift in Sources */,
+				4B73472E251566BA00289A99 /* VocabularyListPattern.swift in Sources */,
 				4B7347122514A36A00289A99 /* About.swift in Sources */,
 				4B7347182514E1AD00289A99 /* Settings.swift in Sources */,
 				4B6B6F082514060B009C0FC1 /* SeaLife.swift in Sources */,
 				4B6B6F04251405BB009C0FC1 /* Animals.swift in Sources */,
 				4B7347152514DC6300289A99 /* More.swift in Sources */,
-				4B6B6F13251412E1009C0FC1 /* ListPresentation.swift in Sources */,
+				4B73472525155DEB00289A99 /* Credits.swift in Sources */,
 				4B6B6EEC2513B9DC009C0FC1 /* English_TOEICApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"English TOEIC/Preview Content\"";
 				DEVELOPMENT_TEAM = 7379GRA8BC;
 				ENABLE_PREVIEWS = YES;
@@ -318,7 +342,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.paulcolombier.English-TOEIC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -332,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"English TOEIC/Preview Content\"";
 				DEVELOPMENT_TEAM = 7379GRA8BC;
 				ENABLE_PREVIEWS = YES;
@@ -342,7 +366,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.paulcolombier.English-TOEIC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

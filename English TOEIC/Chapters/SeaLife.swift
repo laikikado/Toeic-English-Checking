@@ -14,7 +14,7 @@ struct SeaLife: View {
 
     var body: some View {
         NavigationView {
-            ListPresentation(solutionList: $frSeaLifeList, displayedList: $enSeaLifeList)
+            TestListPattern(solutionList: $frSeaLifeList, displayedList: $enSeaLifeList)
         }.navigationBarTitle("Sea life, insects and bugs, birds")
     }
 }
