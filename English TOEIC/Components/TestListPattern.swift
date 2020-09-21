@@ -35,7 +35,7 @@ struct TestListPattern: View {
             Spacer()
             
             HStack {
-                Text("\(displayedList.count) words")
+                Text("\(displayedList.count) words") 
             }
             .font(/*@START_MENU_TOKEN@*/.footnote/*@END_MENU_TOKEN@*/)
             .padding(.bottom)
@@ -48,7 +48,11 @@ struct TestListPattern: View {
 
                 Button("New word") {
                     showTranslation = false
+                    let previousRandomWordNumber = randomWordNumber
                     randomWordNumber = Int.random(in: 0 ..< displayedList.count)
+                    while previousRandomWordNumber == randomWordNumber {
+                        randomWordNumber = Int.random(in: 0 ..< displayedList.count)
+                    }
                 }.padding()
             }.padding(.bottom)
         }.padding(.bottom)

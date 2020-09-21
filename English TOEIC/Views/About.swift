@@ -43,6 +43,8 @@ struct About: View {
                     Link("paulcolombier.fr", destination: URL(string: "https://www.paulcolombier.fr")!)
                 }
             }
+            Section(footer: InfoFooter()) {
+            }
         }.navigationBarTitle("About")
     }
 }
@@ -66,6 +68,17 @@ struct ProfilHeader: View {
                 .font(.subheadline)
         }
         .padding(.top)
+    }
+}
+
+struct InfoFooter: View {
+    var body: some View {
+        HStack(alignment: .bottom) {
+            Text("Made with")
+            Image(systemName: "heart.fill")
+            Text("in Montpellier.")
+        }
+        
     }
 }
 

@@ -23,11 +23,6 @@ struct More: View {
                             Text("About")
                         }
                     }
-                    VStack {
-                        NavigationLink(destination: Credits()) {
-                            Text("Credits")
-                        }.disabled(true)
-                    }
                 }
             }.navigationBarTitle("More")
         }
