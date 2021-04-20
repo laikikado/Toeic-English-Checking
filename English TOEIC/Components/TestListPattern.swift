@@ -12,7 +12,7 @@ struct TestListPattern: View {
     @Binding var solutionList:[String]
     @Binding var displayedList:[String]
     
-    @State var randomWordNumber = Int.random(in: 0 ..< 83)
+    @State var randomWordNumber = Int.random(in: 0 ..< 49)
     @State var showTranslation = false
     
     var body: some View {
@@ -20,7 +20,8 @@ struct TestListPattern: View {
             HStack {
                 Text("\(displayedList[randomWordNumber])")
                     .font(.largeTitle)
-                
+                    .multilineTextAlignment(.center)
+                    .padding(.top)
             }
             .padding(.vertical)
             Spacer()
@@ -29,6 +30,7 @@ struct TestListPattern: View {
                 if showTranslation == true {
                 Text("\(solutionList[randomWordNumber])")
                     .font(.largeTitle)
+                    .multilineTextAlignment(.center)
                 }
             }
             .padding(.vertical)

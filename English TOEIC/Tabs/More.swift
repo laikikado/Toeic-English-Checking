@@ -9,6 +9,8 @@ import SwiftUI
 
 struct More: View {
     
+    @AppStorage("isDarkMode") var isDarkMode = false
+    
     var body: some View {
         NavigationView {
             Form {
@@ -16,7 +18,7 @@ struct More: View {
                     VStack {
                         NavigationLink(destination: Settings()) {
                             Text("Settings")
-                        }.disabled(true)
+                        }
                     }
                     VStack {
                         NavigationLink(destination: About()) {
@@ -25,6 +27,8 @@ struct More: View {
                     }
                 }
             }.navigationBarTitle("More")
+            .preferredColorScheme(isDarkMode ? .dark : .light)
+
         }
     }
 }

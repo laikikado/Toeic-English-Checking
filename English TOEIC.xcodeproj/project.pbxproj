@@ -7,35 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B2B956A262DAD30007C92B3 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2B9569262DAD30007C92B3 /* Test.swift */; };
 		4B6B6EEC2513B9DC009C0FC1 /* English_TOEICApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6B6EEB2513B9DC009C0FC1 /* English_TOEICApp.swift */; };
 		4B6B6EEE2513B9DC009C0FC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6B6EED2513B9DC009C0FC1 /* ContentView.swift */; };
 		4B6B6EF02513B9DD009C0FC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B6B6EEF2513B9DD009C0FC1 /* Assets.xcassets */; };
 		4B6B6EF32513B9DD009C0FC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B6B6EF22513B9DD009C0FC1 /* Preview Assets.xcassets */; };
-		4B6B6F04251405BB009C0FC1 /* Animals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6B6F03251405BB009C0FC1 /* Animals.swift */; };
 		4B6B6F082514060B009C0FC1 /* SeaLife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6B6F072514060B009C0FC1 /* SeaLife.swift */; };
 		4B6E72A42518B455003D4F7A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E72A32518B455003D4F7A /* HomeView.swift */; };
+		4B6E72AA25190A2F003D4F7A /* LandAnimals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E72A925190A2F003D4F7A /* LandAnimals.swift */; };
 		4B7347122514A36A00289A99 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7347112514A36A00289A99 /* About.swift */; };
 		4B7347152514DC6300289A99 /* More.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7347142514DC6300289A99 /* More.swift */; };
 		4B7347182514E1AD00289A99 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7347172514E1AD00289A99 /* Settings.swift */; };
 		4B73472A2515662A00289A99 /* TestListPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7347292515662A00289A99 /* TestListPattern.swift */; };
 		4B73472E251566BA00289A99 /* VocabularyListPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B73472D251566BA00289A99 /* VocabularyListPattern.swift */; };
+		4B7DE388262F75F400F27A1E /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7DE387262F75F400F27A1E /* ShareSheet.swift */; };
+		4B98BA01262D8E7D00337F14 /* ModeSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B98BA00262D8E7D00337F14 /* ModeSwitchView.swift */; };
+		4B98BA05262DAB2C00337F14 /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B98BA04262DAB2C00337F14 /* Training.swift */; };
+		4B98BA08262DAC5E00337F14 /* Vocabulary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B98BA07262DAC5E00337F14 /* Vocabulary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B2B9569262DAD30007C92B3 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		4B6B6EE82513B9DC009C0FC1 /* English TOEIC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "English TOEIC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B6B6EEB2513B9DC009C0FC1 /* English_TOEICApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = English_TOEICApp.swift; sourceTree = "<group>"; };
 		4B6B6EED2513B9DC009C0FC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B6B6EEF2513B9DD009C0FC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B6B6EF22513B9DD009C0FC1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4B6B6EF42513B9DD009C0FC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B6B6F03251405BB009C0FC1 /* Animals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animals.swift; sourceTree = "<group>"; };
 		4B6B6F072514060B009C0FC1 /* SeaLife.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaLife.swift; sourceTree = "<group>"; };
 		4B6E72A32518B455003D4F7A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4B6E72A925190A2F003D4F7A /* LandAnimals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandAnimals.swift; sourceTree = "<group>"; };
 		4B7347112514A36A00289A99 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		4B7347142514DC6300289A99 /* More.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = More.swift; sourceTree = "<group>"; };
 		4B7347172514E1AD00289A99 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		4B7347292515662A00289A99 /* TestListPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListPattern.swift; sourceTree = "<group>"; };
 		4B73472D251566BA00289A99 /* VocabularyListPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyListPattern.swift; sourceTree = "<group>"; };
+		4B7DE387262F75F400F27A1E /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		4B98BA00262D8E7D00337F14 /* ModeSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeSwitchView.swift; sourceTree = "<group>"; };
+		4B98BA04262DAB2C00337F14 /* Training.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
+		4B98BA07262DAC5E00337F14 /* Vocabulary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocabulary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +103,7 @@
 		4B6B6F0225140550009C0FC1 /* Chapters */ = {
 			isa = PBXGroup;
 			children = (
-				4B6B6F03251405BB009C0FC1 /* Animals.swift */,
-				4B6B6F072514060B009C0FC1 /* SeaLife.swift */,
+				4B6E72A825190A0D003D4F7A /* Animals */,
 			);
 			path = Chapters;
 			sourceTree = "<group>";
@@ -104,8 +113,19 @@
 			children = (
 				4B7347292515662A00289A99 /* TestListPattern.swift */,
 				4B73472D251566BA00289A99 /* VocabularyListPattern.swift */,
+				4B98BA00262D8E7D00337F14 /* ModeSwitchView.swift */,
+				4B7DE387262F75F400F27A1E /* ShareSheet.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		4B6E72A825190A0D003D4F7A /* Animals */ = {
+			isa = PBXGroup;
+			children = (
+				4B6B6F072514060B009C0FC1 /* SeaLife.swift */,
+				4B6E72A925190A2F003D4F7A /* LandAnimals.swift */,
+			);
+			path = Animals;
 			sourceTree = "<group>";
 		};
 		4B734721251557C800289A99 /* Views */ = {
@@ -121,6 +141,9 @@
 			isa = PBXGroup;
 			children = (
 				4B7347142514DC6300289A99 /* More.swift */,
+				4B98BA04262DAB2C00337F14 /* Training.swift */,
+				4B98BA07262DAC5E00337F14 /* Vocabulary.swift */,
+				4B2B9569262DAD30007C92B3 /* Test.swift */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -195,13 +218,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B73472A2515662A00289A99 /* TestListPattern.swift in Sources */,
+				4B7DE388262F75F400F27A1E /* ShareSheet.swift in Sources */,
+				4B98BA05262DAB2C00337F14 /* Training.swift in Sources */,
+				4B98BA08262DAC5E00337F14 /* Vocabulary.swift in Sources */,
+				4B2B956A262DAD30007C92B3 /* Test.swift in Sources */,
 				4B6B6EEE2513B9DC009C0FC1 /* ContentView.swift in Sources */,
 				4B73472E251566BA00289A99 /* VocabularyListPattern.swift in Sources */,
 				4B7347122514A36A00289A99 /* About.swift in Sources */,
+				4B98BA01262D8E7D00337F14 /* ModeSwitchView.swift in Sources */,
 				4B7347182514E1AD00289A99 /* Settings.swift in Sources */,
 				4B6E72A42518B455003D4F7A /* HomeView.swift in Sources */,
+				4B6E72AA25190A2F003D4F7A /* LandAnimals.swift in Sources */,
 				4B6B6F082514060B009C0FC1 /* SeaLife.swift in Sources */,
-				4B6B6F04251405BB009C0FC1 /* Animals.swift in Sources */,
 				4B7347152514DC6300289A99 /* More.swift in Sources */,
 				4B6B6EEC2513B9DC009C0FC1 /* English_TOEICApp.swift in Sources */,
 			);
@@ -332,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_ASSET_PATHS = "\"English TOEIC/Preview Content\"";
 				DEVELOPMENT_TEAM = 7379GRA8BC;
 				ENABLE_PREVIEWS = YES;
@@ -356,7 +384,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_ASSET_PATHS = "\"English TOEIC/Preview Content\"";
 				DEVELOPMENT_TEAM = 7379GRA8BC;
 				ENABLE_PREVIEWS = YES;

@@ -12,7 +12,7 @@ struct ContentView: View {
     @State var isActive:Bool = false
     
     var body: some View {
-        VStack {
+        VStack { 
             if self.isActive {
                 HomeView()
             } else {
@@ -33,7 +33,7 @@ struct ContentView: View {
             }
         }
         .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 withAnimation {
                     self.isActive = true
                 }

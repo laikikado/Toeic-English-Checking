@@ -8,38 +8,31 @@
 import SwiftUI
 
 struct Settings: View {
+        
+    @AppStorage("isDarkMode") private var isDarkMode = false
     
-    @Environment(\.colorScheme) var colorScheme
-    
-    @State var themeSelected = 0
-    let themeSelectionList = ["Automatic", "Light Mode", "Dark Mode"]
-
     var body: some View {
         Form {
-            Section {
-                HStack {
-                    Text("Theme")
-                    Spacer()
-                    Text(colorScheme == .dark ? "Dark mode" : "Light mode")
+            Section(header: ThemeModeSettingsHeader()) {
+                VStack {
+                        ModeSwitchView()
                 }
-                /*
-                HStack {
-                    Picker("Choose", selection: $themeSelected) {
-                        ForEach(0..<themeSelectionList.count) {
-                            Text(self.themeSelectionList[$0])
-                        }
-                        //TODO
-                        if themeSelected == 1 {
-                            
-                        } else if themeSelected == 2 {
-                            
-                        } else {
-                            
-                        }
-                    }
-                }*/
             }
-        }.navigationBarTitle("Settings")
+        }
+        .navigationBarTitle("Settings")
+        .preferredColorScheme(isDarkMode ? .dark : .light)
+
+    }
+}
+
+struct ThemeModeSettingsHeader: View {
+    var body: some View {
+        HStack {
+            Image(systemName: "lightbulb")
+            Text("theme mode")
+                .font(.subheadline)
+        }
+        .padding(.top)
     }
 }
 

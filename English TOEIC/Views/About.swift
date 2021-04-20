@@ -10,37 +10,66 @@ import SwiftUI
 let buildVersion: String = Bundle.main.infoDictionary?["CFBundleVersion"] as! String
 let appVersion: String = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
 
+let systemVersion = UIDevice.current.systemVersion
+
 struct About: View {
     
+
     var body: some View {
         Form {
+            //INFORMATIONS SECTION
             Section(header: InformationsAboutHeader()) {
                 HStack {
-                    Text("Version")
+                    Image(systemName: "applelogo")
+                    Text("iOS version")
+                        .padding(.leading, 13.0)
                     Spacer()
-                    Text("\(appVersion)")
+                    Text("\(systemVersion)")
                 }
                 HStack {
-                    Text("Build")
+                    Image(systemName: "arrow.up.square")
+                    Text("App Version")
+                        .padding(.leading, 10.0)
                     Spacer()
-                    Text("\(buildVersion)")
+                    Text("\(appVersion) " + "(\(buildVersion))")
+                }
+                HStack {
+                    Image(systemName: "calendar")
+                    Text("Last updated on")
+                        .padding(.leading, 10.0)
+                    Spacer()
+                    Text("04/20/2021")
                 }
             }
-            Section {
-                HStack {
-                    Text("For any suggestions or feature request, please use the review sections on the App Store.")
-                }.padding()
-            }
+            //ABOUT ME SECTION
             Section(header: ProfilHeader()) {
                 HStack {
-                    Text("Twitter")
-                    Spacer()
-                    Link("@Paul_Colombier", destination: URL(string: "https://twitter.com/Paul_Colombier")!)
+                    Image(systemName: "envelope")
+                    Link("Email", destination: URL(string: "mailto:contact@paulcolombier.fr?subject=[Feedback]%20Voc'In%20-%20Version%20\(appVersion)%20(\(buildVersion))")!)
+                        .padding(.leading, 10.0)
                 }
                 HStack {
-                    Text("Website")
-                    Spacer()
-                    Link("paulcolombier.fr", destination: URL(string: "https://www.paulcolombier.fr")!)
+                    Image(systemName: "megaphone")
+                    Link("Twitter", destination: URL(string: "https://twitter.com/Paul_Colombier")!)
+                        .padding(.leading, 8.0)
+                }
+                HStack {
+                    Image(systemName: "safari")
+                    Link("Website", destination: URL(string: "https://www.paulcolombier.fr")!)
+                        .padding(.leading, 11.0)
+                }
+            }
+            //APPLICATION SECTION
+            Section(header: ReviewHeader()) {
+                HStack {
+                    Image(systemName: "square.and.arrow.up")
+                    ShareSheet()
+                        .padding(.leading, 11.0)
+                }
+                HStack {
+                    Image(systemName: "star.leadinghalf.fill")
+                    Link("Write Review", destination: URL(string: "https://apps.apple.com/app/id375380948?action=write-review")!)
+                        .padding(.leading, 9.0)
                 }
             }
             Section(footer: InfoFooter()) {
@@ -54,6 +83,17 @@ struct InformationsAboutHeader: View {
         HStack {
             Image(systemName: "info.circle")
             Text("informations")
+                .font(.subheadline)
+        }
+        .padding(.top)
+    }
+}
+
+struct ReviewHeader: View {
+    var body: some View {
+        HStack {
+            Image(systemName: "apps.iphone")
+            Text("Application")
                 .font(.subheadline)
         }
         .padding(.top)
@@ -76,6 +116,7 @@ struct InfoFooter: View {
         HStack(alignment: .bottom) {
             Text("Made with")
             Image(systemName: "heart.fill")
+                .padding(.horizontal, -4.0)
             Text("in Montpellier.")
         }
         
